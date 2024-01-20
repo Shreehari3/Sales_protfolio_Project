@@ -28,38 +28,68 @@ The following Power BI Dashboard views are required by management:
 This Power BI project is a practical course with real-life business scenarios, including recorded business meetings with stakeholders. The project involved iterative feedback, feature changes and additions to ensure the dashboard provides all necessary key metrics in a consolidated format.
 
 ## Project Execution
-**Step 1:** Added Power BI connectivity and loaded data into a MySQL database.
 
-**Step 2:** examined and eliminated the Power BI-created default database relationships. created the necessary Power Query dimension tables.
+### Step 1: Data Loading
+- Loaded the data into a MySQL Database.
+- Established a connection between the MySQL Database and Power BI.
 
-**Step 3:** Compared values with the supplied data, validated data in Power BI.
+### Step 2: Database Relationship Review
+- Reviewed and deleted the default database relationships created by Power BI.
+- Created required dimension tables in Power Query.
 
-**Step 4:** Data transformation, which includes the construction of a dynamic table for the previous sales month.
+### Step 3: Data Validation
+- Performed data validation in Power BI by comparing tables with the provided data.
 
-**Step 5:** combined tables and created calculated columns in Power Query, such as `fiscal_year}.
+### Step 4: Data Transformation
+- Transformed data, for example, by creating a dynamic Last Sales Month Reference table that updates after each sale.
+
+### Step 5: Creating Calculated Columns
+- Created calculated columns in Power Query, such as `fiscal_year`.
+- Merged tables after creating calculated columns.
+
+### Step 6: Data Modeling
+- Employed data modeling techniques, specifically using a Star Schema.
+- Connected all dimension tables with Fact tables for efficient data analysis.
+
+### Step 7: Advanced DAX Formulas
+- Created calculated columns using over 40 DAX formulas.
+- Validated these columns against the MySQL database or Excel files for accuracy.
+
+### Step 8: Report Optimization
+- The final step before dashboard design and construction.
+- Optimized the Power BI report to reduce the overall file size, making it easier to share and access.
+
 
 ## Building The Dashboard
-I have created 5 different report views in this report which serves the need of various stakeholders. Let’s have a look at each of them.
+### 1. Home Page
+- The initial page with navigation links to all other report views.
+- Summaries of each view for quick access to needed reports.
 
-The first page of the report is a home page with the navigation to all other views and a summary of each page so a user can directly access the report they need to look at.
-Finance View
-The Finance View shows the P & L statements. The Top Performing and Bottom Performing products and customers. Different product segment performances in different regions. The most important metric here is it shows the Year on Year comparison of P & L in a single view.
+### 2. Finance View
+- Displays profit and loss (P&L) statements.
+- Highlights top and bottom performing products and customers.
+- Compares product segment performances across regions.
+- Features year-on-year P&L comparison.
+- Includes a button to compare Net Sales performance against the previous year and targets.
 
-There is one button created for this view which displays the Net Sales performance Vs Last Year and Vs Target. This helps in decision-making by comparing past performance with the target to achieve the desired goals.
+### 3. Sales View
+- Tailored for the sales team to analyze product and customer performance by region.
+- Provides similar filters to the Finance View for detailed sales analysis.
 
-Sales View
-The sales view is for the sales team to drill down the performance of each product and customer in individual regions. Similar to the finance view it does have the same filters to provide in-depth analysis of sales performance.
+### 4. Marketing View
+- Focuses on key financial stats like Gross Margin %, Net Profit %, Operational Expenses, and Cost Of Goods Sold.
+- Assists in marketing budget planning and identifying potential markets and customers.
 
-Marketing View
-Marketing View contains Gross Margin %, Net Profit %, Operational Expenses and Cost Of Goods Sold which are important financial stats that marketing should be aware of. This helps in deciding the marketing budget for each product in a particular market. Marketing will also be aware of the potential customers and potential market and whether there is a scope for business or not.
+### 5. Supply Chain View
+- Addresses supply chain management and planning.
+- Highlights inventory costs and the impact of delivery delays.
+- Uses historical data for demand forecasting and supply chain optimization.
+- Features a comparison of forecast accuracy across different periods.
 
-Supply Chain View
-The supply chain is also a very important part of any business which if not planned timely can increase the operating cost. Keeping an inventory involves some cost and similarly not having an inventory and not delivering the products on time can harm the business.
-
-The supply chain team should know about the demand for the products from time to time. So the historical data helps them in making informed decisions. The visual above shows that the forecast accuracy of 80.26% in the first Quarter of the year 2020 was not good as compared to the 85.92% forecast accuracy of the same period in the year 2019. The Accessories is the product segment which suffered the most i.e 51.50%.
-
-Executive View
-The Executive view is a consolidated report which includes KIPs like NS, RC%, GM%, NP%, Forecast Accuracy%, Market share and top-selling products and top customers. This view has almost all the important metrics in one view which a top stakeholder will like to see. An executive view saves the time of senior stakeholders who do not want to go in depth about everything but also want to keep abreast with what’s going on in every department.
+### 6. Executive View
+- A consolidated report for top-level stakeholders.
+- Includes key performance indicators (KPIs) like Net Sales, Return on Capital, Gross Margin, Net Profit, Forecast Accuracy, Market Share, and top-selling products and customers.
+- Provides a comprehensive overview for senior stakeholders to stay informed on all departmental performances.
 
 ## Tools Used In Project
 - MS Excel
@@ -77,7 +107,7 @@ The Executive view is a consolidated report which includes KIPs like NS, RC%, GM
 - Going through P&L Statements
 - Working on business transactions like creating Profit %, Gross Margin %, Forecast %, comparison in sales from previous periods, etc. (All listed below in the DAX Formulas list)
 
-This project taught hings beyond just Power BI. In order to compare the performance of the products, product categories, markets, customers, etc., one must go through the P&L statements in the project's business scenario. Financial statistics are provided, and dashboards measure and show the performance of items across various marketplaces and client segments.
+This project taught things beyond just Power BI. To compare the performance of the products, product categories, markets, customers, etc., one must go through the P&L statements in the project's business scenario. Financial statistics are provided, and dashboards measure and show the performance of items across various marketplaces and client segments.
 
 ## Power BI Features Learned & Used
 - DAX Formulas (Listed at the bottom)
